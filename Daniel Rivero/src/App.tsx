@@ -1,13 +1,18 @@
-import './App.css'
-import Init from './pages/init/init.component'
+import { FunctionComponent } from 'react';
+import Init from './pages/init'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Init/>
+  },
+]);
 
+const App: FunctionComponent = () => {
   return (
-    <>
-      <Init/>
-    </>
+    <RouterProvider router={router}/>
   )
 }
 
-export default App
+export default App;
