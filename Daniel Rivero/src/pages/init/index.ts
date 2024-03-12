@@ -9,4 +9,9 @@ align-items: center;
 align-content: center;
 justify-content: center;
 color: white;
+
+h1{
+    display: flex;
+    justify-content: center;
+}
 `
